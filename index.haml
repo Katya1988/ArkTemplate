@@ -1,0 +1,381 @@
+!!! 5
+%html
+	%head
+		%meta(charset="utf-8")
+		%meta(name="viewport" content="width=device-width, initial-scale=1.0")		
+		%link(href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet")
+		%link(rel="stylesheet" href="css/materialize.min.css"  media="screen")	
+
+		%link(href='https://fonts.googleapis.com/css?family=Lora:400,400italic' rel='stylesheet' type='text/css')
+		%link(rel="stylesheet" href="style.css")
+		%script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
+		%script(type="text/javascript" src="js/materialize.min.js")
+		%title Project
+	%body
+		%article
+			/home
+			%section#home.fullscreen
+				/navigation
+				%nav
+					.nav-wrapper
+						%a(href="#" class="brand-logo")
+							%img(src="images/logo-default-white.png" alt="Ark")
+						%ul(id="nav-mobile" class="right hide-on-med-and-down")
+							%li
+								%a(href="#home") Home
+							%li
+								%a(href="#about") About
+							%li
+								%a(href="#services") Services
+							%li
+								%a(href="#work") Work
+	
+							%li
+								%a(href="#contact" class="last") Contact		
+						%ul(id="slide-out" class="side-nav")	
+							%li
+								%a(href="#home") Home
+							%li
+								%a(href="#about") About
+							%li
+								%a(href="#services") Services
+							%li
+								%a(href="#work") Work
+	
+							%li
+								%a(href="#contact" class="last") Contact
+						%a(href="#" data-activates="slide-out" class="button-collapse")
+							%i(class="mdi-navigation-menu")
+						
+				%h1 The agency
+				%h2 Elegant, unified, and a creative agency.
+				%a(class="modal-trigger" href="#modal1")
+					%i(class="material-icons play")
+						play_circle_outline
+				%div(id="modal1" class="modal")
+					%div(class="modal-content vid")
+						%div(class="video-container")
+							%iframe(src="https://player.vimeo.com/video/142874198" width="500" height="281"
+							frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen)
+				%p Play video
+
+			/about us
+			%section#about.container-fluid
+				/ .container
+				.welcome.row
+					.col.s12.m12.l12
+						%h2 Welcome to Ark!
+						%p
+							We hope to dramatically improve customers’ lives and acquire new customers—or expand our relationship with existing customers—by designing effortless experiences for them. 
+				.row
+					.col.m4.s12.a-left
+						%h2.italic About Us
+						%h3 
+							Business & 
+							Creative Agency
+						%p 
+							We'll help you to build your future connected products and services.
+						%a(href="#" class="learn") Learn 	more about us
+					.col.m8.s12
+						.slider
+							%ul.slides
+								%li
+									%img(src="images/slider1.jpg" alt="slide")
+									%div(class="light grey-text text-lighten-3")
+								%li
+									%img(src="images/slider2.jpg" alt="slide")
+								%li
+									%img(src="images/slider3.jpg" alt="slide")
+				/parallax
+				.parallax-container
+					.parallax
+						%img.responsive.img(src="images/para.jpg" alt="")
+						%h2 A simple sleek interface
+				/our mission
+				.container.mission
+					.row
+						.col.m6.s12
+							%h2.t-right Our mission
+							%p.t-right
+								Let people explore and discover your wonderful content on their own.
+							.image	
+								%img.responsive-img.img-about(src="images/about1.jpg" alt="")
+								%a(href="#")
+									%i(class="material-icons")
+										add_circle_outline
+						.col.m6.s12
+							%div.image
+								%img.responsive-img.img-about(src="images/about2.jpg" alt="")
+								%a(href="#")
+									%i(class="material-icons")
+										add_circle_outline						
+							%h2 Our vision
+							%p
+								It’s so important to deeply understand the type of customer you’re designing for.
+				/figures
+				.container-fluid.blue.figures
+					.row
+						.col.m3.s6
+							.about-stat
+								%i(class="material-icons")
+									watch_later
+								%p 100
+								%span Times Faster
+						.col.m3.s6
+							.about-stat
+								%i(class="material-icons")
+									location_on
+								%p 75
+								%span New Branches
+						.col.m3.s6
+							.about-stat
+								%i(class="material-icons")
+									cloud_download
+								%p 850
+								%span Weekly Downloads	
+						.col.m3.s6
+							.about-stat
+								%i(class="material-icons")
+									account_balance_wallet
+								%p 789
+								%span Items have Sold
+
+			/services
+			%section#services
+				.container-fluid	
+					.container
+						%h2 
+							Analyse, Understand
+							%br
+							and 
+							%strong
+								Improve
+						.row
+							/left column
+							.col.m7.s12
+								.row.bg-white
+									.col.m8.s12
+										.perfect
+											%h2
+												Done is better than perfect
+											%p 
+												You’ve wrapped up a project, and now you’re ready to ship it. But then your mind starts racing: is it even good? Did I miss anything? Will people like it? Is it actually done?
+										.pull-left
+											%a(href="#") Let's read more
+										.pull-right
+											%a(href="#")
+												%i(class="material-icons")
+													favorite_border
+											%a(href="#")
+												%i(class="material-icons")
+													chat_bubble_outline
+
+									.col.m4.s12.hidden
+										%img.responsive-img.up(src="images/services1.jpg" alt="")
+
+							/responsive weddesign blue column
+							.col.m4.offset-m1.s12.blue.text-white
+								.column
+									%h3.small Responsive Design
+									%p 
+										Ark Responsive Web Design makes your web page look good on all devices (desktops, tablets, and phones) and fits everywhere.
+									%a(href="#") 
+										More about Responsive Design
+						.row.second
+							.col.m4.purple.s12
+								.column.text-white
+									%h3.small Smart Design
+									%p 
+										Ark Responsive Web Design makes your web page look good on all devices (desktops, tablets, and phones) and fits everywhere.
+									%a(href="#") 
+										More about Responsive Design							
+							/left column
+							.col.m7.offset-m1.s12
+								.row.bg-white
+									.col.m8.s12
+										.perfect
+											%h2
+												Done is better than perfect
+											%p 
+												You’ve wrapped up a project, and now you’re ready to ship it. But then your mind starts racing: is it even good? Did I miss anything? Will people like it? Is it actually done?
+										.pull-left
+											%a(href="#") Let's read more
+										.pull-right
+											%a(href="#")
+												%i(class="material-icons")
+													favorite_border
+											%a(href="#")
+												%i(class="material-icons")
+													chat_bubble_outline
+
+									.col.m4.s12.hidden
+										%img.responsive-img.up(src="images/services2.jpg" alt="")	
+										.clear-fix						
+						.row
+							/left column
+							.col.m7.s12
+								.row.bg-white
+									.col.m8.s12
+										.perfect
+											%h2
+												Webinar Recap: Done is better than perfect
+											%p 
+												Nine Labs’ Brad Weaver covered the steps to getting more work out there more often—and how to build better
+										.pull-left
+											%a(href="#") Let's read more
+										.pull-right
+											%a(href="#")
+												%i(class="material-icons")
+													favorite_border
+											%a(href="#")
+												%i(class="material-icons")
+													chat_bubble_outline
+
+									.col.m4.s12.hidden
+										%img.responsive-img.up(src="images/services3.jpg" alt="")
+
+							/responsive weddesign grey column
+							.col.m4.offset-m1.grey.text-white.s12
+								.column
+									%h3.small Responsive Design
+									%p 
+										Ark Responsive Web Design makes your web page look good on all devices (desktops, tablets, and phones) and fits everywhere.
+									%a(href="#") 
+										More about Responsive Design
+
+			/Work
+			%section#work
+				.container-fluid.blue
+					%h2.text-white.p-both.center 
+						Our Amazing Work.
+						%br
+						%span 
+							We 
+							%strong
+								build 
+							the real 
+							%strong 
+								value!
+				.container.test1
+					.row.test2
+						/first modal
+						.work
+							%div.hv
+								%img.responsive-img.hv-big(src="images/tab1.jpg" alt="")
+							.button-wrap
+								%a(class="modal-trigger waves-effect waves-light btn" href="#modal3") view details
+							%div(id="modal3" class="modal modal-fixed-footer")
+								%div(class="modal-content")
+									%h4 item description
+									%h5 by Ark Studio
+									%p
+										Minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae!
+								%div(class="modal-footer")	
+									%a(href="#!" class="waves-effect waves-light btn") Buy now
+
+
+						/second modal
+						.work
+							%div.hv
+								%img.responsive-img.hv-big(src="images/tab2.jpg" alt="")
+							.button-wrap
+								%a(class="modal-trigger waves-effect waves-light btn" href="#modal4") view details
+							%div(id="modal4" class="modal modal-fixed-footer")
+								%div(class="modal-content")
+									%h4 item description
+									%p
+										Minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae!
+								%div(class="modal-footer")	
+									%a(href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ") Buy now							
+						/third modal
+						.work
+							%div.hv
+								%img.responsive-img.hv-big(src="images/tab3.jpg" alt="")
+							.button-wrap
+								%a(class="modal-trigger waves-effect waves-light btn" href="#modal5") view details
+							%div(id="modal5" class="modal modal-fixed-footer")
+								%div(class="modal-content")
+									%h4 item description
+									%p
+										Minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae!
+								%div(class="modal-footer")	
+									%a(href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ") Buy now							
+						/fourth modal
+						.work
+							%div.hv
+								%img.responsive-img.hv-big(src="images/tab4.jpg" alt="")
+							.button-wrap
+								%a(class="modal-trigger waves-effect waves-light btn" href="#modal6") view details
+							%div(id="modal6" class="modal modal-fixed-footer")
+								%div(class="modal-content")
+									%h4 item description
+									%p
+										Minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae!
+								%div(class="modal-footer")	
+									%a(href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ") Buy now	
+						/fifth modal
+						.work
+							%div.hv
+								%img.responsive-img.hv-big(src="images/tab5.jpg" alt="")
+							.button-wrap
+								%a(class="modal-trigger waves-effect waves-light btn" href="#modal7") view details
+							%div(id="modal7" class="modal modal-fixed-footer")
+								%div(class="modal-content")
+									%h4 item description
+									%p
+										Minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae!
+								%div(class="modal-footer")	
+									%a(href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ") Buy now	
+						/sixth modal
+						.work
+							%div.hv
+								%img.responsive-img.hv-big(src="images/tab6.jpg" alt="")
+							.button-wrap
+								%a(class="modal-trigger waves-effect waves-light btn" href="#modal8") view details
+							%div(id="modal8" class="modal modal-fixed-footer")
+								%div(class="modal-content")
+									%h4 item description
+									%p
+										Minus commodi consequatur provident quae. Nihil, alias, vel consequatur ab aliquam aspernatur optio harum facilis excepturi mollitia autem voluptas cum ex veniam numquam quia repudiandae in iure. Assumenda, vel provident molestiae perferendis officia commodi asperiores earum sapiente inventore quam deleniti mollitia consequatur expedita quaerat natus praesentium beatae!
+								%div(class="modal-footer")	
+									%a(href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ") Buy now																
+			/contact
+			%section#contact
+				.container-fluid
+					.row
+						/contacts dark part
+						.col.m5.l5.s12.text-white
+							.contacts
+								%a(href="#")
+									%img(src="images/logo-default-white.png" alt="logo")
+								%h4 Email Address:
+								%a.email(href="#") prothemes.net@gmail.com
+								%hr
+								%h4 Phone Number:
+								%p 
+									+123 456 7890
+								%hr
+								%h4 Address:
+								%p
+									795 Folsom Ave, Suite 600, San Francisco, CA 94107
+						/contact form
+						.col.s12.m7.l7
+							.cont-form	
+								%h2 Contact us
+								%p 
+									Do you have other questions? Don’t worry, there aren’t any dumb questions.					
+								%p 
+									Just fill out the form below and we’ll get back to you as soon as possible (usually within one business day).		
+								%form
+									%input.name(type="text" name="firstname" placeholder="Name")
+									%input.address(type="email" name="email" placeholder="Email")
+									%textarea(rows="20" name="textarea" placeholder="Your message" )
+									%button(class="btn waves-effect waves-light" type="submit" name="action") submit now
+		/button up
+		%a#up(href="#home" class="waves-effect waves-light btn bt-up")
+			%i(class="material-icons")
+				keyboard_arrow_up	
+		/scripts
+		%script(type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js")
+		%script(type="text/javascript" src="js/materialize.min.js")
+		%script(type="text/javascript" src="js/new.js")
